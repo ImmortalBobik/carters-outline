@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Carter's Outline</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css?v=2">
+</head>
+<body>
+  <div class="app-shell">
+    <!-- Ultra-Minimal Top Bar -->
+    <header class="top-nav">
+      <span class="title">Carter's Outline</span>
+      <div class="stats-group">
+        <span class="stat-item">Streak <strong id="streakVal">0</strong></span>
+        <span class="stat-sep">·</span>
+        <span class="stat-item">Best <strong class="mono" id="bestAccVal">0.0%</strong></span>
+      </div>
+    </header>
+
+    <!-- Main Game Stage -->
+    <main class="game-stage">
+      <div class="canvas-viewport" id="viewport">
+        <canvas id="gameCanvas" width="500" height="500"></canvas>
+
+        <!-- Clean Result Overlay -->
+        <div class="result-modal hidden" id="resultModal">
+          <div class="result-tag" id="resultTag">PERFECT</div>
+          <div class="result-accuracy mono" id="resultAccuracy">99.4%</div>
+          <div class="result-breakdown mono" id="resultBreakdown">+0.4%</div>
+          <div class="result-action-hint">Tap or Space</div>
+        </div>
+      </div>
+
+      <div class="hint-label" id="hintLabel">Hold Space or Click to grow</div>
+
+      <!-- Minimal Circular Face Switcher -->
+      <div class="face-selector-strip" id="faceStrip" role="tablist" aria-label="Select Carter Face"></div>
+    </main>
+  </div>
+
+  <script src="data/heads.js?v=2"></script>
+  <script src="game.js?v=2"></script>
+</body>
+</html>

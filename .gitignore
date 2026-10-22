@@ -1,0 +1,21 @@
+# Python / Dev cache
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# Raw candidate images & AI models
+assets/candidates/
+assets/carter_portraits/
+assets/models/
+assets/game_verified.png
+assets/test_rembg_01.png
+assets/cutouts/preview_sheet.png
+
+# OS / Editor files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.vscode/
+.idea/
